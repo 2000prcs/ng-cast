@@ -1,6 +1,8 @@
 <li class="video-list-entry media" video="$ctrl.video" >
   <div class="media-left">
-    <img class="media-object" src={{$ctrl.video.snippet.thumbnails.default.url}} />
+<!--  instead of using 'src', using ng-src => it delays browser's fetching assets so it loads everything asyncronously -->
+<!--  wrapping with {{}} -> meaning it's from my own code, not angular expression  -->
+    <img class="media-object" ng-src={{$ctrl.video.snippet.thumbnails.default.url}} />
   </div>
   <div class="media-body">
     <div class="video-list-entry-title" ng-click="$ctrl.onClick($ctrl.video)" >{{$ctrl.video.snippet.title}}</div>
