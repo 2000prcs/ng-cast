@@ -1,4 +1,4 @@
-# Ng-cast
+# ng-cast: YouTube with AngularJS
 
 > AngularJS is Interesting in a Few Key Ways
 
